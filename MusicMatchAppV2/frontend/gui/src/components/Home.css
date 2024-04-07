@@ -1,0 +1,79 @@
+/* Example styles for home page */
+.home-container {
+    text-align: center;
+    width: 100%; /* Span the whole webpage horizontally */
+    min-height: 100vh; /* Span the whole webpage vertically */
+    margin: 0; /* Reset margin */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-message {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.action-container {
+    width: 600px; /* Adjust width as needed */
+    margin: 20px auto; /* Center the containers */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.action-container:hover {
+     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /* Darken the shadow on hover */
+}
+
+
+.action-icon {
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    margin: 0 auto 10px; /* Center the icon and add space below */
+    display: block; /* Ensure the icon is centered */
+}
+
+.action-button {
+
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px auto;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+.action-content {
+    text-align: center;
+}
+
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+.sign-out-button {
+    display: block;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px auto;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+.sign-out-button:hover {
+    background-color: #bb2d3b;
+}

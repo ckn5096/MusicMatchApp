@@ -1,0 +1,178 @@
+
+
+/* Style for the music preferences container
+  margin: 0 auto;
+   justify-content: space-between;
+
+  */
+.container {
+    max-width: 1800px;
+
+    padding: 50px;
+}
+
+/* Style for the content container */
+.content-container {
+    display: flex;
+
+    justify-content: flex-start; /* Align the content to the left */
+}
+
+/* Style for the left column */
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for music preferences */
+.preferences {
+    margin-bottom: 20px;
+}
+
+/* Style for form */
+.form {
+    margin-bottom: auto; /* Push the form to the bottom */
+}
+
+/* Style for form inputs */
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style for form button */
+.form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the right column */
+.right-column {
+    flex: 2.5;
+}
+
+
+.album-art {
+    /*width: 75px; !* Adjust the width of the album art *!*/
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add margin for spacing */
+}
+
+
+/* Style for playlist */
+.playlist {
+    margin-top: 20px;
+}
+
+/* Style for each playlist item */
+.playlist-item {
+    margin-bottom: 20px;
+}
+
+/* Style for playlist name */
+.playlist-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style for container of playlist tracks */
+.playlist-tracks-container {
+    /*display: grid;*/
+    /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+    /*grid-gap: 10px;*/
+
+  display: inline-block; /* Change display property to inline-block */
+  margin-right: 10px; /* Add some right margin for spacing */
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Style for playlist tracks */
+.playlist-tracks {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Style for playlist track */
+.playlist-track {
+    display: flex; /* Change to flex layout */
+    align-items: center; /* Vertically center the content */
+    margin-bottom: 10px; /* Adjust margin */
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.playlist-track:hover {
+   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /* Darken the shadow on hover */
+}
+
+/* Style for playlist track name */
+.playlist-track-name {
+    font-style: italic;
+}
+
+/* Style for playlist track artist */
+.playlist-track-artist {
+    font-weight: bold;
+}
+
+/* Style for sign out button */
+.sign-out-button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sign-out-button:hover {
+    background-color: #c82333;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+    max-width: 80%; /* Limit the width of the modal */
+    max-height: 80%; /* Limit the height of the modal */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds modal height */
+}
+

@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Change background color */
+}
+
+.container {
+  max-width: 600px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Add position relative to position the music notes container */
+}
+
+.logo {
+  margin-bottom: 20px;
+  /*animation: rotateLogo 10s linear infinite; !* Apply animation *!*/
+  animation: var(--animation, rotateLogo 10s linear infinite); /* Use CSS variable for animation */
+}
+
+
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Rotate to 360 degrees */
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link-button {
+  /*display: block;*/
+}
+
+.link-button:last-child {
+  margin-top: 10px;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+/* New styles for the music notes container */
+.music-notes-container {
+  position: absolute; /* Position the music notes container relative to the parent container */
+  top: 0; /* Position it at the top of the parent container */
+  left: 0; /* Position it at the left of the parent container */
+  width: 100%; /* Make it span the whole width of the parent container */
+  height: 100%; /* Make it span the whole height of the parent container */
+  pointer-events: none; /* Make it not interactable to mouse events */
+}
+
+/* Styles for the music notes */
+.music-note {
+  position: absolute; /* Position the music notes absolutely */
+  width: 30px; /* Set width of the music notes */
+  height: 30px; /* Set height of the music notes */
+  background-size: cover; /* Ensure the image covers the whole space */
+  animation: fall linear infinite; /* Apply animation */
+}
+
+/* Animation for the falling music notes */
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg) ; /* Start position */
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg) ; /* End position */
+  }
+}
+
+/* Styles for different music note types */
+.music-note1 {
+  background-image: url('alto-saxophone-512.png'); /* Replace 'music-note1.png' with the path to your music note image */
+
+}
+
+.music-note2 {
+  background-image: url('bass-drum-512.png'); /* Replace 'music-note2.png' with the path to your music note image */
+  animation-delay: 0.5s;
+
+}
+
+.music-note3 {
+  background-image: url('guitar-512.png'); /* Replace 'music-note3.png' with the path to your music note image */
+  animation-delay: 1s;
+
+}
+
+.music-note4 {
+  background-image: url('trumpet-512.png'); /* Replace 'music-note4.png' with the path to your music note image */
+  animation-delay: 1.5s;
+
+}
+
+
